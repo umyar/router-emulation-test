@@ -1,0 +1,34 @@
+{
+  "name": "test-task-3",
+  "version": "1.0.0",
+  "description": "test-task-router",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umyar/test-task-3.git"
+  },
+  "author": "umyar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umyar/test-task-3/issues"
+  },
+  "homepage": "https://github.com/umyar/test-task-3#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "path": "^0.12.7",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0",
+    "@babel/plugin-transform-classes": "^7.0.0",
+    "@babel/plugin-transform-spread": "^7.0.0"
+  }
+}
