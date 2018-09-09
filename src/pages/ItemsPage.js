@@ -24,7 +24,8 @@ class ItemsPage extends Page {
         }
 
         const main = document.createElement('main');
-        main.innerHTML = itemsMarkup;
+        main.innerHTML = '<div class="items-container">' + itemsMarkup + '</div>' +
+            `<div class="total">всего товаров: ${data.total}</div>`;
         this.app.appendChild(main);
 
     }

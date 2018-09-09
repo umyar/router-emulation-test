@@ -6,9 +6,11 @@ export default class Router {
     }
 
     onHashChange(e) {
+        const history = this.history;
         const param = e.newURL.split('#/')[1];
         if (this.routeParams.some(i => i === param)) {
-            this.history.push(param);
+            history.length < 10? history.push(param) : history.shift() && history.push(param);
+            console.log(history);
             this.renderPage(param)
         }
     }
