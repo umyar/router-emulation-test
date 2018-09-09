@@ -1,4 +1,4 @@
-import Page from '../TeamplatePage';
+import Page from './TeamplatePage';
 import data from '../content/aboutUs.json';
 
 class AboutPage extends Page {
@@ -11,7 +11,7 @@ class AboutPage extends Page {
         super.renderContent();
 
         const main = document.createElement('main');
-        main.innerHTML = '<p align="center">' + data.text + '</p>';
+        main.innerHTML = `<p align="center">${data.text}</p>`;
         this.app.appendChild(main);
 
     }

@@ -1,4 +1,4 @@
-import Page from "../TeamplatePage";
+import Page from "./TeamplatePage";
 import data from '../content/items.json'
 
 class ItemsPage extends Page {

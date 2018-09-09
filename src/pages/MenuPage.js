@@ -1,4 +1,4 @@
-import Page from "../TeamplatePage";
+import Page from "./TeamplatePage";
 
 class MenuPage extends Page {
     constructor() {
@@ -10,8 +10,7 @@ class MenuPage extends Page {
         super.renderContent();
 
         const main = document.createElement('main');
-        main.innerHTML = '<ul class="nav">' + '<li><a href="#/about">О нас</a></li>' +
-            '<li><a href="#/items">Товары</a></li>' + '</ul>';
+        main.innerHTML = '<ul class="nav"><li><a href="#/about">О нас</a></li><li><a href="#/items">Товары</a></li></ul>';
 
         this.app.appendChild(main);
 

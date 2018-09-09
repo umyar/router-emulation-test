@@ -52,3 +52,41 @@ main p {
 .items-container {
     display: flex;
 }
+
+.history li {
+    display: inline;
+    margin: 5px;
+}
+
+.history {
+    border: 1px grey;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+
+.history li:last-child {
+    font-weight: 800;
+}
+
+.history-container {
+    display: flex;
+}
+
+.history-link {
+    text-decoration: none;
+    color: black;
+}
+
+.history-link:visited {
+    color: black
+}
+
+.history-link:hover {
+    border-bottom: solid 2px black;
+    transition: all 0.5s ;
+}
+
+button {
+    margin: 10px;
+}

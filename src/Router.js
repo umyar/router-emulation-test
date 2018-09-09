@@ -10,9 +10,13 @@ export default class Router {
         const param = e.newURL.split('#/')[1];
         if (this.routeParams.some(i => i === param)) {
             history.length < 10? history.push(param) : history.shift() && history.push(param);
-            console.log(history);
+            window._history = this.history;
             this.renderPage(param)
         }
+        /*else {
+            location.hash = '/menu';
+            alert('К сожалению, по этому адресу нет контента, поэтому мы вернули Вас на главную.')
+        }*/
     }
 
     renderPage(param) {
