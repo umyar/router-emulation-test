@@ -2,7 +2,6 @@
   "plugins": [
     "@babel/plugin-transform-classes",
     "@babel/plugin-transform-arrow-functions",
-    "@babel/plugin-transform-spread",
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-transform-spread"
   ]
 }

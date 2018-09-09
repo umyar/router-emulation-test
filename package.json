@@ -19,7 +19,6 @@
   "homepage": "https://github.com/umyar/test-task-3#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-transform-arrow-functions": "^7.0.0",
     "@babel/plugin-transform-classes": "^7.0.0",
     "@babel/plugin-transform-spread": "^7.0.0",
