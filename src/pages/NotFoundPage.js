@@ -1,19 +1,19 @@
 import Page from './pageTeamplate';
-import data from '../content/aboutUs.json';
 
-class AboutPage extends Page {
+class NotFoundPage extends Page {
     constructor() {
         super();
-        this.title = 'О нас'
+        this.title = 'Error 404'
     }
 
     renderContent() {
         super.renderContent();
 
         const main = document.createElement('main');
-        main.innerHTML = `<p align="center">${data.text}</p>`;
+        main.innerHTML = `<p align="center">Страница не найдена . . .</p>`;
         this.app.appendChild(main);
+
     }
 }
 
-export default new AboutPage()
+export default new NotFoundPage()

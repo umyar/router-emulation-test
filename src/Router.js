@@ -13,10 +13,7 @@ export default class Router {
             window._history = this.history;
             this.renderPage(param)
         }
-        /*else {
-            location.hash = '/menu';
-            alert('К сожалению, по этому адресу нет контента, поэтому мы вернули Вас на главную.')
-        }*/
+        else this.renderPage('_not-found')
     }
 
     renderPage(param) {

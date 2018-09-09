@@ -6,11 +6,12 @@ class Page {
 
     renderContent() {
         const header = document.createElement('header');
-        const historyItemsMarkup = window._history.map(i => `<li><a class=history-link href=#/${i}>${i}</a></li>`)
+        const historyItemsMarkup = window._history &&
+            window._history.map(i => `<li><a class=history-link href=#/${i}>${i}</a></li>`)
             .reduce((prev,current) => prev + current, '');
         const goBack = document.createElement('button');
         goBack.innerHTML = '⟸ назад';
-        goBack.onclick = function () { window.history.back() };
+        goBack.onclick = () => window.history.back();
 
         header.innerHTML =
             `<div class='current-hash'>
@@ -18,7 +19,7 @@ class Page {
             </div>
             <h1>${this.title}</h1>
             <div class="history-container">
-                История: <ul class="history">${historyItemsMarkup}</ul>
+                ${historyItemsMarkup? `История: <ul class="history">${historyItemsMarkup}</ul>` : ''}
             </div>`;
         header.appendChild(goBack);
 

@@ -84,7 +84,6 @@ main p {
 
 .history-link:hover {
     border-bottom: solid 2px black;
-    transition: all 0.5s ;
 }
 
 button {

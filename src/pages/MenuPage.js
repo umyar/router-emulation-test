@@ -1,4 +1,4 @@
-import Page from "./TeamplatePage";
+import Page from "./pageTeamplate";
 
 class MenuPage extends Page {
     constructor() {
