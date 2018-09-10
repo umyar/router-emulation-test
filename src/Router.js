@@ -13,7 +13,7 @@ export default class Router {
             window._history = this.history;
             this.renderPage(param)
         }
-        else this.renderPage('_not-found')
+        else this.renderPage('not-found')
     }
 
     renderPage(param) {

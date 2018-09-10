@@ -1,4 +1,4 @@
-import Page from './pageTeamplate';
+import Page from './pageHeader';
 import data from '../content/aboutUs.json';
 
 class AboutPage extends Page {

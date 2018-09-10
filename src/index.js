@@ -8,5 +8,10 @@ window.addEventListener('hashchange', e => {
     router.onHashChange(e);
 });
 
-//инициализирующее значение
-location.hash = '/menu';
+window.onload = (e) => {
+    if (location.hash === '') {
+        location.hash = '/menu';
+    }
+    e.newURL = location.href;
+    router.onHashChange(e);
+}

@@ -1,4 +1,4 @@
-import Page from "./pageTeamplate";
+import Page from "./pageHeader";
 import data from '../content/items.json'
 
 class ItemsPage extends Page {
@@ -24,8 +24,9 @@ class ItemsPage extends Page {
         }
 
         const main = document.createElement('main');
-        main.innerHTML = '<div class="items-container">' + itemsMarkup + '</div>' +
-            `<div class="total">всего товаров: ${data.total}</div>`;
+        main.innerHTML =
+            `<div class="items-container">${itemsMarkup}</div>
+             <div class="total">всего товаров: ${data.total}</div>`;
         this.app.appendChild(main);
 
     }

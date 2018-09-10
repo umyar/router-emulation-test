@@ -7,7 +7,7 @@ const routes = {
     'menu': MenuPage,
     'items': ItemsPage,
     'about': AboutPage,
-    '_not-found': NotFoundPage
+    'not-found': NotFoundPage
 };
 
 export default routes

@@ -1,4 +1,4 @@
-import Page from './pageTeamplate';
+import Page from './pageHeader';
 
 class NotFoundPage extends Page {
     constructor() {
@@ -10,9 +10,8 @@ class NotFoundPage extends Page {
         super.renderContent();
 
         const main = document.createElement('main');
-        main.innerHTML = `<p align="center">Страница не найдена . . .</p>`;
+        main.innerHTML = `<p align="center">Страница не найдена . . .</p><a href="#/menu">Перейти на главную</a>`;
         this.app.appendChild(main);
-
     }
 }
 
