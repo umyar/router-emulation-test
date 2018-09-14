@@ -1,4 +1,4 @@
-Тестовое задание: https://drive.google.com/file/d/1vAbWFj2dFY9SgX-BcM--Z4bOijL6OV8x/view?usp=sharing
+Тестовое задание расположено в репозитории (TASK.pdf)
 
 # Запуск проекта:
 1) Склонировать репозиторий:
